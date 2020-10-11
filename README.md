@@ -167,7 +167,7 @@ date +%F
 
    `echo $temp`
 
-## 五.文件名代换**
+## 五.文件名代换
 
    用于匹配的字符成为通配符（Wildcard），如： * ? []
 
@@ -175,7 +175,7 @@ date +%F
    - `?` 匹配任意一个字符
    - `[若干字符]` 匹配方括号中一个任意一个字符
 
-## 六. 命令代换**
+## 六. 命令代换
 
    由 **`** **反引号**或者**$(命令)**括起来的也是一条命令，Shell先执行该命令，然后将输出结果代换到当前命令中。列入定义一个变量存放date命令的输出：
 
@@ -253,3 +253,33 @@ user$ [ $? ]			# 虽然看起来很奇怪，但是 [] 确实是一个命令，�
 ![image-20201008232343341](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201008232343341.png)
 
 ![image-20201008233244548](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201008233244548.png)
+
+![image-20201009181641113](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201009181641113.png)
+
+## 十三. 分支
+
+![image-20201009181719457](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201009181719457.png)
+
+![image-20201010170321217](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010170321217.png)
+
+![image-20201010170708383](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010170708383.png)
+
+![image-20201010173213538](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010173213538.png)
+
+![image-20201010183935713](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010183935713.png)
+
+![image-20201010190423941](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010190423941.png)
+
+![image-20201010190546023](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010190546023.png)
+
+![image-20201010191610662](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010191610662.png)
+
+![image-20201010192416821](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010192416821.png)
+
+![image-20201010193037321](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010193037321.png)
+
+![image-20201010193622168](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010193622168.png)
+
+![image-20201010195912075](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010195912075.png)
+
+![image-20201010201004579](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010201004579.png)
