@@ -268,6 +268,8 @@ user$ [ $? ]			# 虽然看起来很奇怪，但是 [] 确实是一个命令，�
 
 ![image-20201010183935713](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010183935713.png)
 
+https://www.cnblogs.com/EasonJim/p/8315939.html
+
 ![image-20201010190423941](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010190423941.png)
 
 ![image-20201010190546023](C:\Users\mi\AppData\Roaming\Typora\typora-user-images\image-20201010190546023.png)

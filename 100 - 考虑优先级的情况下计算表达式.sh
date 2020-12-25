@@ -46,7 +46,7 @@ Check ()
     while [ 1 ]
     do
     	if [ "$INDEX" = $ARRAY_SIZE ]; then
-    		if grep '^[[:digit:]]*$' <<< "${ARRAY[$INDEX]}">/dev/null; then
+    		if grep -P '^[1-9]{1}[0-9]*([.]{1}[0-9]+){0,1}$' <<< "${ARRAY[$INDEX]}">/dev/null; then
     			echo -e "--> Check num \033[32m${ARRAY[$INDEX]}\033[0m right"
     			echo "================================"
     			echo
@@ -59,7 +59,7 @@ Check ()
 			fi
 		fi
 
-        if grep '^[[:digit:]]*$' <<< "${ARRAY[$INDEX]}">/dev/null; then
+        if grep -P '^[1-9]{1}[0-9]*([.]{1}[0-9]+){0,1}$' <<< "${ARRAY[$INDEX]}">/dev/null; then
         		echo -e "--> Check num \033[32m${ARRAY[$INDEX]}\033[0m right"
 				let INDEX=INDEX+1
 
@@ -73,7 +73,7 @@ Check ()
 					kill $$
 					;;
 				esac
-		else 
+		else
 			echo -e "\033[31mExpression format error! [Check-3]\033[0m"
 			kill $$
 		fi 
@@ -214,14 +214,19 @@ Main ()
     done    
 }
 
+clear
+
+echo "------------Lab3-----------"
+echo
+
 Main $*
 
 ShowArray
 
-Check
+Check 2>/dev/null
 
-MulAndDiv
+MulAndDiv 2>/dev/null
 
-AddAndSub
+AddAndSub 2>/dev/null
 
 echo -e "Answer: \033[42;31m$ANSWER\033[0m"
